@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morse-Code-Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center">Morse-Code-Generator</h1>
+
+    <div
+      class="container d-flex justify-content-around align-items-center"
+      style="margin-top: 50px"
+    >
+      <div>
+        <b>Input</b>
+        <textarea id="input" cols="50" rows="20"></textarea>
+      </div>
+
+      <button class="btn btn-md px-3 btn-outline-dark" onclick="texttomorse()">
+        Convert to Morse Code
+      </button>
+
+      <button class="btn btn-md px-3 btn-outline-dark" onclick="playmorse()">
+        Play Morse Code
+      </button>
+
+      <div>
+        <b>Output</b>
+        <textarea id="output" cols="50" rows="20"></textarea>
+      </div>
+    </div>
+
+    <audio id="a1" src="/audio/morsecode-1.mp3"></audio>
+    <audio id="a2" src="/audio/kick.wav"></audio>
+    <audio id="a3" src="/audio/morsecode-2.mp3"></audio>
+
+    <script src="index.js"></script>
+  </body>
+</html>
