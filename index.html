@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse-Code-Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -14,27 +14,28 @@
     />
   </head>
   <body>
-    <h1 style="text-align: center">Morse-Code-Generator</h1>
+    <bg-image src="css/images/background.png" class="image" ></bg-image>
+    <h1 style="text-align: center" class="body__h1">Morse-Code-Generator</h1>
 
     <div
       class="container d-flex justify-content-around align-items-center"
       style="margin-top: 50px"
     >
-      <div>
-        <b>Input</b>
+      <div class="Input">
+        <b id="input__h">Input</b>
         <textarea id="input" cols="50" rows="20"></textarea>
       </div>
 
-      <button class="btn btn-md px-3 btn-outline-dark" onclick="texttomorse()">
+      <button class="btn btn-md px-3 btn-outline-light" onclick="texttomorse()">
         Convert to Morse Code
       </button>
 
-      <button class="btn btn-md px-3 btn-outline-dark" onclick="playmorse()">
+      <button class="btn btn-md px-3 btn-outline-light" onclick="playmorse()">
         Play Morse Code
       </button>
 
-      <div>
-        <b>Output</b>
+      <div class="Output">
+        <b id="output_h">Output</b>
         <textarea id="output" cols="50" rows="20"></textarea>
       </div>
     </div>
