@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
 }
-body{
+.main{
     background-image: url("css/images/background.png");
     background-size: 100%;
 }
@@ -32,4 +32,44 @@ body{
 #output_h{
     color: #fff;
     font-family: 'DM Sans', sans-serif;
+}.col{
+    margin-top: 2rem;
+    border: 12px;
+    border-style: outset;
+}
+.row__h{
+    margin-left: 15%;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    width: 70%;
+    border-radius: 0.5rem;
+}
+.row__h:hover{
+    background-color: rgb(255, 255, 255);
+    transition-delay: 0.5s;
+    transition:ease;
+}
+
+.container__h{
+    font-family: 'DM Sans', sans-serif;
+}
+.container__h:hover{
+    color: rgb(0, 0, 0);
+    transition-delay: 0.5s;
+    transition:ease;
+}
+.image{
+margin-left: 18%;
+}
+
+h3
+{
+    padding-top: 2rem;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    animation-name: heading;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    text-align: center;
 }
