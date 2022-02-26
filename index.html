@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse-Code-Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -14,35 +14,54 @@
     />
   </head>
   <body>
-    <bg-image src="css/images/background.png" class="image" ></bg-image>
-    <h1 style="text-align: center" class="body__h1">Morse-Code-Generator</h1>
+      <div class="main">
+          <bg-image src="css/images/background.png"></bg-image>
+       
+        <h1 style="text-align: center" class="body__h1">Morse-Code-Generator</h1>
+        <h3>(scroll down for morse code chart)</h3>
 
-    <div
-      class="container d-flex justify-content-around align-items-center"
-      style="margin-top: 50px"
-    >
-      <div class="Input">
-        <b id="input__h">Input</b>
-        <textarea id="input" cols="50" rows="20"></textarea>
-      </div>
+        <div
+        class="container d-flex justify-content-around align-items-center"
+        style="margin-top: 50px"
+        >
+        <div class="Input">
+            <b id="input__h">Input</b>
+            <textarea id="input" cols="50" rows="20"></textarea>
+        </div>
 
-      <button class="btn btn-md px-3 btn-outline-light" onclick="texttomorse()">
-        Convert to Morse Code
+        <button class="btn btn-md px-3 btn-outline-light" onclick="texttomorse()">
+            Convert to Morse Code
+        </button>
+
+        <button class="btn btn-md px-3 btn-outline-light" onclick="playmorse()">
+            Play Morse Code from start
+        </button>
+
+        <button class="btn btn-md px-3 btn-outline-light" onclick="pause()">
+          Pause
       </button>
 
-      <button class="btn btn-md px-3 btn-outline-light" onclick="playmorse()">
-        Play Morse Code
-      </button>
-
-      <div class="Output">
-        <b id="output_h">Output</b>
-        <textarea id="output" cols="50" rows="20"></textarea>
-      </div>
+        <div class="Output">
+            <b id="output_h">Output</b>
+            <textarea id="output" cols="50" rows="20"></textarea>
+        </div>
+        </div>
     </div>
 
+    <div class="col">
+        <div class="row__h">
+            <h2 class="container__h">Morse Code Chart</h2>
+        </div>
+        <div class="image">
+            <img src="css/images/symbols.jpg" class="symbols">
+        </div>
+    </div>
+    
+
+
     <audio id="a1" src="/audio/morsecode-1.mp3"></audio>
-    <audio id="a2" src="/audio/kick.wav"></audio>
-    <audio id="a3" src="/audio/morsecode-2.mp3"></audio>
+    <audio id="a3" src="/audio/Blank.mp3"></audio>
+    <audio id="a2" src="/audio/morsecode-2.mp3"></audio>
 
     <script src="index.js"></script>
   </body>
