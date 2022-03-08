@@ -9,7 +9,7 @@ Long Description about project. This project do that. This project is awesome...
 Node js / 85
 
 ## Link to product walkthrough
-[link to video]
+https://www.loom.com/share/54c223416c2e4bb6bb5c37a7db3c892c
 
 ## How it Works ?
 1. It first converts the text into corresponding dots and dashes of morse code.
